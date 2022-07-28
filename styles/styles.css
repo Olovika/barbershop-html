@@ -117,6 +117,11 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-logo {
+  width: 140px;
+  margin-right: 100px;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -345,6 +350,18 @@ body {
   color: inherit;
 }
 
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-right-column {
+  width: 700px;
+}
 .catalog-filter-title {
   font-size: 20px;
   line-height: 28px;
