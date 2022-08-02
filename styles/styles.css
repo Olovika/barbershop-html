@@ -127,6 +127,8 @@ body {
 }
 
 .navigation-logo {
+  display: flex;
+  align-items: center;
   width: 140px;
   margin-right: 100px;
 }
@@ -290,7 +292,25 @@ body {
 }
 
 .appointment-form {
+  display: grid;
+  grid-template-columns: 114px 74px 208px;
+  gap: 19px 17px;
   color: #595959;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.appointment-form-name {
+  grid-column: 1 / -1;
+}
+
+.appointment-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
 }
 
 .appointment-form label {
@@ -453,17 +473,35 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
   list-style-type: none;
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
+  gap: 20px;
 }
 
 .product-card {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-title-link {
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .product-card-title {
@@ -479,6 +517,10 @@ body {
   color: #814b18;
   background-color: #ffffff;
   text-transform: uppercase;
+}
+
+.product-card-button {
+  margin-top: auto;
 }
 
 .pagination-container {
