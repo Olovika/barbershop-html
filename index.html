@@ -107,7 +107,7 @@
             Груминг
             <b class="services-price">400 ₽</b>
           <li class="services-item">
-           Комплексная стрижка
+            Комплексная стрижка
             <b class="services-price">2300 ₽</b>
           </li>
         </ul>
@@ -115,36 +115,42 @@
       </section>
       <section class="gallery">
         <h2 class="gallery-title">Фотогалерея</h2>
-        <img class="slider-image" src="./images/gallery-1.jpg" width="390" height="250" alt="Примеры работ.">
-        <button class="slider-button slider-prev type=button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next type=button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <div class="slider">
+          <div class="slider-wrapper">
+            <img class="slider-image" src="./images/gallery-1.jpg" width="390" height="250" alt="Примеры работ.">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev type=button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next type=button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">4 фото</span>
-            </button>
-          </li>
-        </ol>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">4 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
     </div>
     <div class="index-columns">
@@ -177,20 +183,20 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="appointment-form-date field-group">
             <label for="appointment-date">Дата</label>
-            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
           </p>
           <p class="appointment-form-time field-group">
             <label for="appointment-time">Время</label>
-            <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+            <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
           </p>
           <p class="appointment-form-phone field-group">
             <label for="appointment-phone">Телефон</label>
-            <input type="text" id="appointment-phone" name="appointment-phone"
+            <input class="field" type="text" id="appointment-phone" name="appointment-phone"
                    placeholder="+7 800 000-00-00">
           </p>
           <p class="appointment-form-name field-group">
             <label for="appointment-name">Ваше имя</label>
-            <input type="text" id="appointment-name" name="appointment-name">
+            <input class="field" type="text" id="appointment-name" name="appointment-name">
           </p>
           <button class="button appointment-submit" type="submit">Записаться</button>
         </form>
@@ -218,9 +224,11 @@
     <section class="newsletter">
       <h2 class="page-footer-title">Получайте лучшие предложения</h2>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-               id="newsletter-email" required>
+        <p class="newsletter-email field-group">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+                 id="newsletter-email" required>
+        </p>
         <button class="button newsletter-button" type="submit">
           <span class="visually-hidden">Отправить</span>
         </button>
