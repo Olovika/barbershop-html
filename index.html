@@ -85,11 +85,9 @@
 
         <a class="navigation-link navigation-link-login" href="#">
           <svg class="navigation-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9 2h5v12H9v2h7V0H9v2ZM4.3 3.7l3.24 3.25H0v2h7.54l-3.25 3.24 1.42 1.42 4.95-4.95.7-.71-.7-.7L5.7 2.28 4.29 3.71Z"
-                    fill="#BDBDBD"/>
-            </svg>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9 2h5v12H9v2h7V0H9v2ZM4.3 3.7l3.24 3.25H0v2h7.54l-3.25 3.24 1.42 1.42 4.95-4.95.7-.71-.7-.7L5.7 2.28 4.29 3.71Z"
+                  fill="#BDBDBD"/>
           </svg>
           Вход
         </a>
@@ -215,31 +213,34 @@
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="appointment-form-date field-group">
-             <span class="form-label">
-            <label class="form-label" for="appointment-date">Дата</label>
-               <span class="tooltip">
+             <span class="form-label form-label-icon">
+            <label class="form-label" for="appointment-date">
+              Дата
+              <span class="tooltip">
                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                          fill="currentColor"><path
                       d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg>
                   </button>
-                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
                 </span>
+            </label>
              </span>
             <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
           </p>
           <p class="appointment-form-time field-group">
-            <label class="form-label" for="appointment-time">Время</label>
-            <span class="tooltip">
+            <label class="form-label form-label-icon" for="appointment-time">
+              Время
+              <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                          fill="currentColor"><path
                       d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"></path></svg>
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони>
-                </span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
             </span>
+            </label>
             <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
           </p>
           <p class="appointment-form-phone field-group">
